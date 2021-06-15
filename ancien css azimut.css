@@ -1,0 +1,490 @@
+/*On retire les marge par défaut des elemements*/
+body, h1, h2, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6, #navbar a, label{
+    font-family: 'Quicksand', sans-serif;
+}
+/*-----------------header-----------------*/
+header{
+    font-size: 90px;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), no-repeat center/100% url(../img/banner.jpg);
+}
+/*-----------navbar-----------*/
+/*div de la bar de navigation et de la barre de recherche*/
+#containerNavbar{
+    background-color: #042553;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    height: 90px;
+}
+/*taille de la police pour les liens de la barre de navigation*/
+#containerNavbar nav{
+   font-size: 18px;
+}
+/*modification des liens dans la barre de navigation*/
+#navbar a{
+    padding: 10px 20px 30px 20px;
+    text-decoration: none;
+    color: white;
+}
+/*barre au survole du a*/
+#navbar a:hover{
+border-bottom: 4px solid white;
+}
+/*gestion du menu burger, mise en forme et place*/
+#burger{
+    display: none;
+    margin: auto;
+    width: 40px;
+}
+/*---------barre de recherche---------------*/
+/*boutton de la barre de recherche*/
+#bouttonRecherche{
+    background-color: #06479F;
+    border: unset;
+    width: 40px;
+    border-radius: 0 20px 20px 0;
+}
+/*changement de couleur au survole*/
+#bouttonRecherche:hover{
+    background: #04306C;
+}
+/*image du boutton de recherche*/
+#bouttonRecherche img{
+    width: 20px;
+}
+/*barre de recherche*/
+#barreRecherche{
+    width: 20rem;
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+    background: #053679;
+    border: unset;
+}
+/*modification */
+::placeholder{
+    color: #01132C;
+    padding-left: 5%;
+}
+/*div contenant la barre de cherche et sont boutton*/
+#recherche{ 
+    display: flex;
+    margin-right: 1%;
+
+}
+
+/*--------------------Slider CSS-----------------------*/
+
+/*gestion de taille de la section du slider*/
+#slider{
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      margin: 2.5% 0 2.5% 0;
+      font-size: 17px;
+}
+/**/
+#slider-container{
+    height:100%;
+    width: 90%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+}
+/*position du menu*/
+.menu {
+    position: relative;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    top: 90%;
+}
+/*style des radio pour les inputs*/ 
+.menu label {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: rgb(225, 220, 220);
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+}
+/*changement de couleur au survol de des inputs radio*/
+.menu label:hover {
+    background: #042553;
+}
+/*sert à faire dispairaite les input de base*/
+input[name=slides]{
+display: none;
+}
+/*div contenant les img du slider*/
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left .75s;
+}
+/*j'ai pas encore bien compris*/
+/*selecteur en css*/
+/* /!\ ne pas toucher, risque d'explosion */
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .5s;
+}
+/*gestion du contenu du slider*/
+.slide-1 {
+    background:no-repeat center/100% url(../img/slider1.jpg);
+}
+.slide-2 {
+    background:no-repeat center/100%  url(../img/slide2.jpg);
+    background-color: white;
+}
+.slide-3{
+    background: #042553;
+}
+.slide-3 p{
+    padding: 4% 2% 4% 2%;
+}
+.slide-3 h2{
+    padding: 2% 0 0 0;
+}
+
+/*--------------------articles--------------------*/
+/*Positionnement des articles*/
+#articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    column-gap: 3%;
+    row-gap: 50px;
+    margin: 0 5% 0 5%;
+    text-align: center;
+    color: white;
+
+}
+article p{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+/*Propriétés des articles*/
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #042553;
+}
+
+/*Propriétés bandeaux articles*/
+.banner{
+    width: 100%;
+    height: 40px;
+    background-size: cover;
+    margin: 0px;
+    padding-top: 3%;
+}
+
+/*Propriétés des images des articles*/
+.image{
+    background-origin: center;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+/*Article 1*/
+#a1>h2{
+    background-color: coral;   
+}
+#img1{
+    background-image: url("../img/systeme_solaire.png");
+}
+
+/*Article 2*/
+#a2>h2{
+    background-color: #ecd346;
+}
+#img2{
+    background-image: url("../img/imgslide2.png");  
+}
+
+/*Article 3*/
+#a3>h2{
+    background-color: #2d8aa7;
+}
+#img3{
+    background-image: url("../img/realistic_galaxy.jpg");
+}
+
+/*Article 4*/
+#a4>h2{
+    background-color: coral;
+}
+#img4{
+    background-image: url("../img/imgslider1.png");
+}
+
+/*Article 5*/
+#a5>h2{
+    background-color: #ecd346;
+}
+#img5{
+    background-image: url("../img/ceinture-asteroides.png");
+}
+
+/*Article 6*/
+#a6>h2{
+    background-color: #2d8aa7;
+}
+#img6{
+    background-image: url("../img/montre_astro.jpg");
+}
+
+/*Images d'intersection*/
+#astro{
+    background-image: url("../img/4698692.png");
+    background-origin: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    margin: 4% 0 4% 0;
+}
+#satelite{
+    background-image: url(../img/4698769.png);
+    background-origin: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    margin: 4% 0 4% 0;
+}
+#earth{
+    background-image: url("../img/4698710.png");
+    background-origin: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    margin: 4% 0 4% 0;
+}
+
+
+/*---------fromulaire de contact-------*/
+#form{
+    background-color:#042553;
+    text-align: center;
+    margin: 2.5% 0 2.5% 0;
+}
+/*mise en page du titre du formulaire de contact*/
+form h2{
+    padding-top: 1%;
+}
+/*pour mettre en forme le formulaire de contact*/
+#contenuFrom{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr
+    1fr;
+    grid-template-areas:
+    "headerContact contact "
+    "zText zText "
+    ". boutton";
+}
+/*div avec l'input objet et l'input email avec leurs labels*/
+#headerContact{
+    grid-area: headerContact;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+    width: 100%;
+}
+/*barre de texte objet*/
+/*mise en plage forcée de la div objet dans le grid*/
+#objet{
+    grid-row: 2;
+}
+/*mise en forme de la barre de text objet*/
+#objet input{
+    margin: 0;
+    width: 80%;
+    height: 25px;
+
+}
+/*barre de texte email*/
+/*mise en forme de la barre de text email*/
+#email input{
+    margin: 0;
+    width: 80%;
+    height: 25px;
+}
+/*textarea*/
+/*paramettrage de la div zText dans le grid area*/
+#zText{
+    grid-area: zText;
+}
+/*taille de la zone du textarea*/
+#zText textarea{
+    height:100%;
+    width: 89%;
+}
+/*boutton d'envoie*/
+#bouttonEnvoie{
+    grid-area: boutton;
+    padding: 2.5% 0 2.5% 70%;  
+}
+#bouttonEnvoie input{
+    background-color: #06479F;
+    border: unset;
+    height: 30px;
+    width: 90px;
+}
+#bouttonEnvoie input:hover{
+    background: #04306C;
+}
+/*changement de couleur du text du boutton*/
+input[value=envoyer]{
+    color: white;
+}
+
+/*petit image du formulaire de contact */
+#contact{
+    grid-area: contact;
+    grid-row: 1/3;
+    background-origin: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    background-image: url(../img/4698746.png);
+}
+/*------------------------footer----------------------*/
+/*modification du footer pour la mise en page */
+#footerMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #042553; 
+    height: 20vh;
+}
+/*modification du lien vers les mention legales*/
+#footerMain a{
+    color: white;
+    text-decoration: none;
+}
+#footerMain a:hover{
+    color: red;
+}
+/*icon des réseau*/
+#reseau{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#reseau img{
+    width: 40px;
+    margin-left: 10px;
+}
+/*---------------------fin footer----------------------*/
+/*Media pour les tablettes*/
+@media screen and (max-width: 1024px) {
+    /*changement de place du menu du slider pour le mode tablette*/
+    .menu {
+        top: 90%;
+    }
+    /*On fait disparaitre la barre de navigation ainsi que la barre de recherche*/
+    nav, #recherche{
+        display:none;
+    }
+    /*on fait appraitre le menu burger(non fonctionnel)*/
+    #burger{
+        display: block;
+    }
+    /*changement de la taille du h1 pour l'adapter à l'affichage tablette*/
+    h1{
+        font-size: 60px;
+    }
+    /*changement de la taille du header pour garder de bonne proportion pour le mode tablette*/
+    header{
+        height: 200px;
+    }
+    /*réoganisation du formulaire pour l'adapter au format tablette*/
+    #contenuFrom{
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr
+        1fr;
+        grid-template-areas:
+        "contact"
+        "headerContact"
+        "zText "
+        "boutton";
+    }
+    /*réorganisation du bloc objet et email pour le format tablette*/
+    #headerContact{
+        grid-area: headerContact;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+        width: 100%;
+        padding-top: 2%;
+    }
+    /*modiification de la taille de l'icon du formulaire de contact*/
+    #contact{
+        height: 70px;
+    }
+    /*réoganisation du formulaire de contact pour le mode tablette*/
+    #articles{
+        grid-template-columns: 1fr;
+    }   
+}
+/*Media pour les Télephone*/
+@media screen and (max-width:600px) {
+    /*modification de l'emplacement de menu du slider pour le mode telephone*/
+    .menu {
+        top: 90%;
+    }
+    /*modification de la taille du header pour la version mobile*/
+    header{
+        height: 100px;
+    }
+    /*modification de la taille de l'image du formulaire de contact*/
+    #contact{
+        height: 40px;
+    }
+    .slide-3 p{
+        font-size: 15px;
+    }
+    .slide-3 h2{
+        padding: 2% 0 0 0;
+        font-size: 17px;
+    }
+}
