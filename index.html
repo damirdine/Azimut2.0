@@ -8,136 +8,105 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>AZIMUT</title>
 </head>
 <body>
-    <!--header-->
-    <header>
-        <h1>AZIMUT</h1>
-   </header>
-   <!--Nav-->
-    <div id="containerNavbar">
-        <nav id="navbar">
-            <a href="http://">Découverte</a>
-            <a href="http://">Actualités</a>
-            <a href="http://">Activités</a>
-            <a href="http://">Forum</a>
-            <a href="http://">Boutique</a>
-        </nav>
-        <!--Barre de recherche-->
-        <div id="recherche">
-            <label for="site-search"></label>
-            <input id="barreRecherche" type="search" id="site-search" aria-label="Search through site content"
-            name="RECHERCHE" placeholder="RECHERCHE">
-            <button id="bouttonRecherche" type="submit"><img src="asset/img/loupe.png" alt="icone de loupe"></button>
-        </div>
-        <img id="burger" src="asset/img/menu burger.png" alt="icon menu burger">
-    </div>
+    <div class="container"> 
+        <div class="row">
 
-    <div id="earth"></div>
-        <!--slider-->
-    <section id="slider">
-        <div id="slider-container">
-            <div class="menu">
-                <label for="slide-dot-1"></label>
-                <label for="slide-dot-2"></label>
-                <label for="slide-dot-3"></label>
-            </div id="radioSlider">
-                <input id="slide-dot-1" type="radio" name="slides" checked>
-                <div class="slide slide-1"></div>
+            <div class="card-group">
+                <div class="card me-3">
+                  <img src="asset/img/systeme_solaire.png" class="card-img-top" alt="...">
+                  <div class="card-body">
 
-                <input id="slide-dot-2" type="radio" name="slides" checked>
-                <div class="slide slide-2"></div>
+                    <h2 class="text-dark text-center"> SYSTEME SOLAIRE</h2>
+                    <p class="card-text text-justify">On appelle Système solaire, l'ensemble des astres soumis au champ de gravitation du Soleil (notre étoile à elle seule représente 99,8 % de la masse totale du Système solaire !). Le Système solaire évolue dans l'un des bras de notre galaxie spirale, la Voie lactée, à quelque 26.000 années-lumière de son centre. Selon les définitions établies par l'Union astronomique internationale, notre Système solaire comprend notamment :
 
-                <input id="slide-dot-3" type="radio" name="slides" checked>
-                <div class="slide slide-3"> 
-                    <h2>Bienvenue sur Azimut, le site de l'astronomie et des actus spatiales</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, minima qui explicabo consequatur expedita quis tempore dolore. Nobis totam delectus, iusto ex aut consectetur eum amet, voluptatum distinctio voluptatibus architecto?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum doloremque consectetur tempora cumque eum excepturi dolores placeat, praesentium a doloribus, impedit quis fuga.
-                </p>
-            </div> 
-        </div>
-    </section>
-    <!--fin slider-->
-    <div id="astro"></div>
-    <section id="articles">
-        <article id="a1">
-            <h2 class="banner">DECOUVERTE</h2>
-                <div id="img1" class="image"></div>
-                <h3>Le système solaire</h3>
-                <p>On appelle Système solaire, l'ensemble des astres soumis au champ de gravitation du Soleil (notre étoile à elle seule représente 99,8 % de la masse totale du Système solaire !). Le Système solaire évolue dans l'un des bras de notre galaxie spirale, la Voie lactée, à quelque 26.000 années-lumière de son centre. Selon les définitions établies par l'Union astronomique internationale, notre Système solaire comprend notamment :
-
-                    Huit planètes et leurs satellites naturels. </p>
-        </article>
-        <article id="a2">
-            <h2 class="banner">ACTUALITES</h2>
-                <div id="img2" class="image"></div>
-                <h3>Un nouveau trou noir</h3>
-                <p>Des astronomes de l’université d’État de l’Ohio (États-Unis) ont découvert, grâce aux distorsions qu’il provoque sur une étoile géante rouge, un trou noir de seulement trois masses solaires. Probablement l’un des plus proches de notre Terre jamais « observée ». Il se trouve dans la Voie lactée, à seulement 1.500 années-lumière de nous. En appliquant cette méthode de recherche, ils espèrent en trouver beaucoup d'autres à l'avenir.</p>
-        </article>
-        <article id="a3">
-            <h2 class="banner">ACTIVITE</h2>
-                <div id="img3" class="image"></div>
-                <h3>Carte du ciel et observation</h3>
-                <p>Les cartes du ciel sont utiles pour repérer les étoiles à observer à l’oeil nu ou avec de petits télescopes.
-                    Les observations avec les télescopes professionnels nécessitent des ordinateurs qui orientent le télescope vers la cible choisie et d’autres outils plus précis qui aident à déterminer la position exacte des
-                    objets dans le ciel. L’observation à l’oeil nu reste néanmoins un des moyens les plus fascinants pour
-                    connaître le ciel et se plonger dans son immensité</p>
-        </article>
-        <article id="a4">
-            <h2 class="banner">DECOUVERTE</h2>
-                <div id="img4" class="image"></div>
-                <h3>Les galaxies</h3>
-                <p>Les galaxies sont des systèmes tentaculaires composés de poussières, de gaz, de matière noire et d'un million à un billion d'étoiles, le tout maintenu par la gravité. Presque toutes les grandes galaxies compteraient également en leur centre des trous noirs supermassifs.</p>
-        </article>
-        <article id="a5">
-            <h2 class="banner">ACTUALITES</h2>
-                <div id="img5" class="image"></div>
-                <h3>Saturne en train de chavirer</h3>
-                <p>Massive, gazeuse, majestueuse et pourtant elle bascule ! De récentes observations, permises grâce à la sonde Cassini, attestent que Saturne s’incline au gré de l’éloignement de ses satellites. Notamment de la migration du géant Titan, bien plus rapide que prévu.</p>
-        </article>
-        <article id="a6">
-            <h2 class="banner">ACTIVITE</h2>
-                <div id="img6" class="image"></div>
-                <h3>Montre astronomique</h3>
-                <p>Les montres astronomiques présentent toute une variété d'affichages en rapport avec le mouvement des astres. Les montres de poche de la Renaissance sont les héritières des grandes horloges astronomiques des XIVe et XVe siècles, elles-mêmes issues des astrolabes et des calendriers mécaniques antérieurs.</p>
-        </article>
-    </section>
-        <div id="satelite"></div>
-        <!--formulaire de contact-->
-        <form id="form" > 
-            <h2>NOUS CONTACTER</h2>
-            <div id="contenuFrom">
-                <div id="headerContact">
-                    <div id="email">
-                        <label for="Email">Email:</label>
-                        <input type="text">
-                    </div>
-                    <div id="objet">
-                        <label for="Objet"> Objet:</label>
-                        <input type="text" id="objet" name="objet">
-                    </div>
+                        Huit planètes et leurs satellites naturels.</p>
+                  
+                  </div>
                 </div>
-                <div id="contact"></div>
-                <div id="zText">
-                    <label for="textMail"></label>
-                    <textarea name="textMail" id="textMail" cols="" rows=""></textarea>
+                <div class="card me-3">
+                  <img src="asset/img/imgslide2.png" class="card-img-top" alt="...">
+        
+                  <div class="card-body">
+                    <h2 class="text-dark text-center"> NOUVEAU TROU NOIR</h2>
+                    <p class="card-text text-justify">Des astronomes de l’université d’État de l’Ohio (États-Unis) ont découvert, grâce aux distorsions qu’il provoque sur une étoile géante rouge, un trou noir de seulement trois masses solaires. Probablement l’un des plus proches de notre Terre jamais « observée ». Il se trouve dans la Voie lactée, à seulement 1.500 années-lumière de nous. En appliquant cette méthode de recherche, ils espèrent en trouver beaucoup d'autres à l'avenir.</p>
+                    
+                  </div>
                 </div>
-                <div id="bouttonEnvoie">
-                    <input type="submit" value="envoyer">
+                <div class="card">
+                  <img src="asset/img/realistic_galaxy.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h2 class="text-dark text-center"> CARTE DU CIEL</h2>
+                    <p class="card-text">Les cartes du ciel sont utiles pour repérer les étoiles à observer à l’oeil nu ou avec de petits télescopes.
+                        Les observations avec les télescopes professionnels nécessitent des ordinateurs qui orientent le télescope vers la cible choisie et d’autres outils plus précis qui aident à déterminer la position exacte des
+                        objets dans le ciel. L’observation à l’oeil nu reste néanmoins un des moyens les plus fascinants pour
+                        connaître le ciel et se plonger dans son immensité</p>
+                    
+                  </div>
+                </div>
+              </div>
+           
+            </div>
+            <div class="row">
+
+                <div class="card-group">
+                    <div class="card me-3">
+                      <img src="asset/img/imgslider1.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h2 class="text-dark text-center"> LES GALAXIES</h2>
+                        <p class="card-text">Les galaxies sont des systèmes tentaculaires composés de poussières, de gaz, de matière noire et d'un million à un billion d'étoiles, le tout maintenu par la gravité. Presque toutes les grandes galaxies compteraient également en leur centre des trous noirs supermassifs.</p>
+                        
+                      </div>
+                    </div>
+                    <div class="card me-3">
+                      <img src="asset/img/ceinture-asteroides.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h2 class="text-dark text-center"> SATURNE CHAVIRE</h2>
+                        <p class="card-text">Massive, gazeuse, majestueuse et pourtant elle bascule ! De récentes observations, permises grâce à la sonde Cassini, attestent que Saturne s’incline au gré de l’éloignement de ses satellites. Notamment de la migration du géant Titan, bien plus rapide que prévu.</p>
+                       
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="asset/img/montre_astro.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h2 class="text-dark text-center"> MONTRE ASTRONOMIQUE</h2>
+                        <p class="card-text">Les montres astronomiques présentent toute une variété d'affichages en rapport avec le mouvement des astres. Les montres de poche de la Renaissance sont les héritières des grandes horloges astronomiques des XIVe et XVe siècles, elles-mêmes issues des astrolabes et des calendriers mécaniques antérieurs.</p>
+                       
+                      </div>
+                    </div>
+                  </div>
+               
                 </div>
             </div>
-        </form>
-        <!--Footer Main page-->
-        <footer id="footerMain">
-            <div id="reseau">
-                <a href=""><img src="asset/img/facebook.png" alt="icon facebook"></a>
-                <a href=""><img src="asset/img/twitter.png" alt="icon twitter"></a>
-                <a href=""><img src="asset/img/youtube.png" alt="icon youtube"></a>
-                <a href=""><img src="asset/img/instagram.png" alt="icon instagram"></a>
-            </div>
-                 <P>Réalisé par Charlotte, Sébastien, Léa, Romain.</P>
-                 <a href="mentionsLegales.html">Mentions légales</a>
-        </footer>
 
+
+
+
+
+
+
+
+
+
+
+        </div></div>
+    
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    
 </body>
 </html>
