@@ -9,9 +9,10 @@
     background-color: #01132C;
     text-align: center;
     display: grid;
+    color: white;
 }
 .form-group{
-    padding: 20px;   
+    padding: 20px;  
 }
 /*------------------------footer----------------------*/
 /*modification du footer pour la mise en page */
