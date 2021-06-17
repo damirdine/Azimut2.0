@@ -7,37 +7,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Azimut à pour but de vous informer et de vous instruire le monde de l'astronomie, alors n'hesite pas à nous rejoindre !">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-   
+    <link rel="stylesheet" href="asset/css/style.css">
+
 
     <title>AZIMUT</title>
 </head>
 
 <body>
+    <!--header-->
+    <header>
+        <h1>AZIMUT
+            <p id="sub"></p>
+        </h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="index.html">AZIMUT</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" id="dec" aria-current="page" href="#">Découverte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="actu" href="#">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="activ" href="#">Activités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="shop" href="index2.html">Boutique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="forum" href="#">Forum</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 my-1" type="search" placeholder="Recherche" aria-label="Search">
+                    <button class="btn border-white my-1" type="submit">Rechercher</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--IMAGE DU HAUT-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <img class="mx-auto d-block mt-4" src="asset/img/4698710.png">
+            </div>
+        </div>
+    </div>
+    <!--Slider image-->
     <div class="container-fluid">
         <div class="row-fluid ">
-            <div class="col-8 mt-5 mx-auto d-block">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
+            <div class="col-8 my-5 mx-auto d-block">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="asset/img/slide3.jpg" class="d-block w-100" alt="image d'astronomie">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-none d-md-none d-lg-block w-75">
                                 <h2>Bienvenue sur Azimut, le site de l'astronomie et des actus spatiales</h2>
-                                <p class="bg-light text-dark p-2 m-3 text-justify">Voir ce que l'œil seul ne voit pas, la couleur des
+                                <p class="bg-light text-dark p-2 m-3 text-justify ">Voir ce que l'œil seul ne voit pas,
+                                    la couleur des
                                     étoiles, des nuages de gaz et de poussières interstellaires dans notre galaxie à des
-                                    dizaines de milliers d'années-lumière. Pouponnières d'étoiles et restes magnifiques de
+                                    dizaines de milliers d'années-lumière. Pouponnières d'étoiles et restes magnifiques
+                                    de
                                     supernova, et plus loin des galaxies à des distances qui se comptent en millions
                                     d'années-lumière, tel est le loisir passionnant que cet humble site tente de vous
                                     faire partager. </p>
                             </div>
+                            
                         </div>
                         <div class="carousel-item">
                             <img src="asset/img/slider1.jpg" class="d-block w-100" alt="image d'astronomie">
@@ -50,21 +108,171 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+    <!--IMAGE DU MILIEU-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <img class="mx-auto d-block mt-4" src="asset/img/4698692.png">
+            </div>
+        </div>
+    </div>
+    <!-- Card Text -->
+    <div class="container mx-auto d-block mt-5">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header bg-danger text-center text-light">DÉCOUVERTE</h5>
+                    <img src="asset/img/systeme_solaire.png" class="card-img-top" alt="...">
+                    <div class="blue">
+                    <h5 class="card-title text-center">SYSTÈME SOLAIRE</h5>
+                    <div class="card-body">
+                        <p class="card-text">On appelle Système solaire, l'ensemble des astres soumis au champ de
+                            gravitation du Soleil (notre étoile à elle seule représente 99,8 % de la masse totale du
+                            Système solaire !). </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header bg-warning text-center text-light">ACTUALITÉS</h5>
+                    <img src="asset/img/imgslide2.png" class="card-img-top" alt="...">
+                    <div class="blue">
+                    <h5 class="card-title text-center">NOUVEAU TROU NOIR</h5>
+                    <div class="card-body">
+                        <p class="card-text">Des astronomes de l’université d’État de l’Ohio (États-Unis)
+                            ont découvert, grâce aux distorsions qu’il provoque sur une étoile géante rouge, un trou
+                            noir de seulement trois masses solaires.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header bg-info text-center text-light">ACTIVITÉ</h5>
+                    <img src="asset/img/realistic_galaxy.jpg" class="card-img-top" alt="...">
+                    <div class="blue">
+                    <h5 class="card-title text-center">CARTE DU CIEL</h5>
+                    <div class="card-body">
+                        <p class="card-text">Les cartes du ciel sont utiles pour repérer les étoiles à observer à l’oeil
+                            nu ou avec de petits télescopes. Les observations avec les télescopes professionnels
+                            nécessitent des ordinateurs. </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header bg-danger text-center text-light">DÉCOUVERTE</h5>
+                    <img src="asset/img/imgslider1.png" class="card-img-top" alt="...">
+                    <div class="blue">
+                    <h5 class="card-title text-center">LES GALAXIES</h5>
+                    <div class="card-body">
+                        <p class="card-text">Les galaxies sont des systèmes tentaculaires composés de poussières, de
+                            gaz, de matière noire et d'un million à un billion d'étoiles, le tout maintenu par la
+                            gravité. </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header bg-warning text-center text-light">ACTUALITÉS</h5>
+                    <img src="asset/img/ceinture-asteroides.png" class="card-img-top" alt="...">
+                    <div class="blue">
+                    <h5 class="card-title text-center">SATURNE CHAVIRE</h5>
+                    <div class="card-body">
+                        <p class="card-text">Massive, gazeuse, majestueuse et pourtant elle bascule ! De récentes
+                            observations, permises grâce à la sonde Cassini, attestent que Saturne s’incline au gré de
+                            l’éloignement de ses satellites.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header bg-info text-center text-light">ACTIVITÉ</h5>
+                    <img src="asset/img/montre_astro.jpg" class="card-img-top" alt="...">
+                    <div class="blue">
+                    <h5 class="card-title text-center">MONTRE ASTRONOMIQUE</h5>
+                    <div class="card-body">
+                        <p class="card-text ">Les montres astronomiques présentent une variété d'affichage en
+                            rapport avec le mouvement des astres et sont issues des astrolabes et des calendriers mécaniques antérieurs.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--IMAGE DU BAS-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <img class="mx-auto d-block m-5" src="asset/img/4698769.png">
+            </div>
+        </div>
+    </div>
+        <!--formulaire de contact-->
+        <div class="container-fluid contact my-2">
+            <h3 class="title2 mt-3">NOUS CONTACTER</h3> <img class="mx-auto d-block mt-4" src="asset/img/4698746.png">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Nom: </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Doe">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Prénom :</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Adresse Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Objet</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Objet du message">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label text-light">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12 ">
+                <button class="btn btn-primary mx-auto d-block mb-3" type="submit">Envoyer</button>
+            </div>
+        </div>
+        <!--Footer Main page-->
+        <footer id="footerMain">
+            <div id="reseau">
+                <a href=""><img src="asset/img/facebook.png" alt="icon facebook"></a>
+                <a href=""><img src="asset/img/twitter.png" alt="icon twitter"></a>
+                <a href=""><img src="asset/img/youtube.png" alt="icon youtube"></a>
+                <a href=""><img src="asset/img/instagram.png" alt="icon instagram"></a>
+            </div>
+            <p class="para22">Réalisé par Charlotte, Sébastien, Léa, Romain (Refait par Damirdine, Valentin, Christophe
+                et Samira)</p>
+            <a href="mentionsLegales.html">Mentions légales</a>
+        </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+        <script src="asset/js/main_page.js"></script>
 </body>
 
 </html>

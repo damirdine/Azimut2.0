@@ -7,26 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Azimut à pour but de vous informer et de vous instruire le monde de l'astronomie, alors n'hesite pas à nous rejoindre !">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="stylesheet" href="asset/css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
        
 
     <title>Notre Boutique Azimut</title>
 </head>
 <body>
-<header>
-    <h1 id="capital">Bienvenue dans notre boutique Azimut</h1>
+  <!--TITRE DE LA PAGE-->
+  <header>
+  <h1>AZIMUT
+      <p id="sub">Boutique</p>
+  </h1>
 </header>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top mb-3">
+  <div class="container-fluid">
+      <a class="navbar-brand text-light" href="index.html">AZIMUT</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link text-light active" id="dec" aria-current="page" href="#">Découverte</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" id="actu" href="#">Actualités</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" id="activ" href="#">Activités</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" id="shop" href="index2.html">Boutique</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" id="forum" href="#">Forum</a>
+              </li>
+          </ul>
+          <form class="d-flex">
+              <input class="form-control me-2 my-1" type="search" placeholder="Recherche" aria-label="Search">
+              <button class="btn border-white my-1" type="submit">Rechercher</button>
+          </form>
+      </div>
+  </div>
+</nav>
+<!--CATALOGUE BOUTIQUE-->
 <div class="container">
-    <div class="row ">
+    <div class="row">
     <div class="card m-4" style="width: 20rem;">
         <img src="asset/img/puzzle.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="text-center">Premier Homme sur la Lune.</h5>
-          <p class="card-text text-justify">Puzzle 1000 pièces - Premier Homme sur la Lune
+          <p class="card-text text-justify">Puzzle 1000 pièces - Premier Homme sur la Lune.
             Taille approximative du puzzle assemblé : 68 x 48 cm.</p>
             <p class="text-center font-weight-bolder ">11,99€</p>
             <a href="#" class="btn btn-primary mx-auto d-block">AJOUTER AU PANIER</a>
@@ -36,27 +75,78 @@
         <img src="asset/img/planete.png" class="card-img-top w-75 mx-auto d-block pt-4" alt="...">
         <div class="card-body">
             <h5 class="text-center pt-5">Système solaire en bois 3D.</h5>
-            <p class="card-text text-justify">
+            <p class="card-text text-justify pb-1">
             Vous avez envie de réaliser vous-même un bel objet décoratif. Découvrez la magnifique boîte à musique puzzle planétarium !</p>
-              <p class="text-center font-weight-bolder pt-2">39€</p>
+              <p class="text-center font-weight-bolder pt-3 pb-1">39€</p>
               <a href="#" class="btn btn-primary mx-auto d-block">AJOUTER AU PANIER</a>
         </div>
       </div>
       <div class="card m-4" style="width: 20rem;">
-        <img src="asset/img/rocket.png" class="card-img-top w-75 mx-auto d-block pt-4" alt="...">
+        <img src="asset/img/rocket.png" class="card-img-top w-75 mx-auto d-block pt-5 pb-1" alt="...">
         <div class="card-body">
-            <h5 class="text-center pt-5">Rocket Science - BUKI .</h5>
+            <h5 class="text-center pt-3">Rocket Science - BUKI.</h5>
             <p class="card-text text-justify">
-               
-                Prépare le carburant avec les ingrédients fournis, place le bouchon de sécurité et fais décoller la fusée jusqu’à 15 mètres de haut !</p>
+               Prépare le carburant avec les ingrédients fournis, place le bouchon de sécurité et fais décoller la fusée jusqu’à 15 mètres de haut !</p>
               <p class="text-center font-weight-bolder pt-1">14,90€</p>
               <a href="#" class="btn btn-primary mx-auto d-block">AJOUTER AU PANIER</a>
         </div>
       </div>
-</div></div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</div>
+
+<div class="row">
+  <div class="card m-4" style="width: 20rem;">
+      <img src="asset/img/poster.jpg" class="card-img-top w-75 mx-auto d-block pt-4" alt="...">
+      <div class="card-body">
+          <h5 class="text-center pt-5">Notre Système Solaire.</h5>
+        <p class="card-text text-justify pt-3">Papier peint photo de qualité exeptionnelle, attache facile sur supports secs et propres. Utilisable à l’intérieur, il colle sur papiers peints intissés ou lisses, enduits plains.</p>
+          <p class="text-center font-weight-bolder pt-1">9,45€</p>
+          <a href="#" class="btn btn-primary mx-auto d-block">AJOUTER AU PANIER</a>
+      </div>
+    </div>
+    <div class="card m-4" style="width: 20em;">
+      <img src="asset/img/livre.jpg" class="card-img-top w-50 mx-auto d-block pt-4" alt="...">
+      <div class="card-body">
+          <h5 class=" text-center pt-4">Petit Larousse de l'astronomie.</h5>
+          <p class="card-text text-justify pt-2">
+            Un guide complet. Des conseils pratiques et des découvertes célestes en perspective.
+            Vous êtes débutant et souhaitez apprendre à connaître le ciel ? Ce guide est pour vous ! </p>
+            <p class="text-center font-weight-bolder">10,45€</p>
+            <a href="#" class="btn btn-primary mx-auto d-block">AJOUTER AU PANIER</a>
+      </div>
+    </div>
+    <div class="card m-4 pb-5" style="width: 20rem;">
+      <img src="asset/img/coffret.jpg" class="card-img-top w-75 mx-auto d-block pt-1" alt="...">
+      <div class="card-body">
+          <h5 class="text-center pt-2">Coffret Découverte du ciel.</h5>
+          <p class="card-text text-justify pt-2">
+             Idéal pour s'initier à l'astronomie. Grâce à ce coffret composé d’un guide d’observation du ciel et d’une paire de jumelle adaptée, partez à la découverte des merveilles du ciel nocturne. </p>
+            <p class="text-center font-weight-bolder pt-3">99€</p>
+            <a href="#" class="btn btn-primary mx-auto d-block">AJOUTER AU PANIER</a>
+      </div>
+    </div>
+  </div>
+    <button type="button" class="btn btn-primary mx-auto d-block">voir plus</button>
+
+
+</div>
+       <!--Footer Main page-->
+       <footer id="footerMain">
+        <div id="reseau">
+            <a href=""><img src="asset/img/facebook.png" alt="icon facebook"></a>
+            <a href=""><img src="asset/img/twitter.png" alt="icon twitter"></a>
+            <a href=""><img src="asset/img/youtube.png" alt="icon youtube"></a>
+            <a href=""><img src="asset/img/instagram.png" alt="icon instagram"></a>
+        </div>
+             <xx>Réalisé par Charlotte, Sébastien, Léa, Romain. (Refait par Damirdine, Valentin, Christophe et Samira)</xx>
+             <a href="mentionsLegales.html">Mentions légales</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 <script src="asset/js/main_page.js"></script>
 </body>
 

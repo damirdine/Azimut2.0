@@ -1,5 +1,56 @@
+/*HEADER ET NAVBAR*/
+.navbar{
+    background-color: #001F51;
+    padding: 0;
+}
+.nav-item{
+    padding: 5px;
+}
+.nav-item:hover{
+    background-color: gray;
+    background-color: rgba(0, 0, 0, .5);
+}
+.navbar-brand {
+    padding: 10px;
+}
+.btn{
+    color: white;
+    outline: white;
+}
+.btn:hover{
+    color: #001F51 ;
+    background-color: white;
+}
+#doc{
+    padding: 5px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+h1>p{
+    font-size: 20px;
+}
+header{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0em;
+    height: 110px;
+    background-image:url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*TITRE BOUTIQUE*/
 #capital{
-    font-size:50px;
+    font-size:3vw;
+    padding-top:30px;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
     height: 25vh;
@@ -8,4 +59,142 @@
     align-items: center;
     color: white;
     background: linear-gradient(to bottom,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), no-repeat center/100% url(../img/banner.jpg);
+
+    
+}
+h4{font-family: 'Quicksand', sans-serif;}
+
+/*fond bleu aux card page une*/
+.blue {background-color: #001F51;
+color:white;}
+
+/*---------fromulaire de contact-------*/
+.title2{
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+.contact{
+    background-color: #001F51;
+    display: grid;
+}
+/*------------------------footer----------------------*/
+/*modification du footer pour la mise en page */
+#footerMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #042553; 
+    height: 20vh;
+    margin-top:20px;
+}
+/*modification du lien vers les mention legales*/
+#footerMain a{
+    color: white;
+    text-decoration: none;
+}
+#footerMain a:hover{
+    color: red;
+}
+/*icon des réseau*/
+#reseau{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+#reseau img{
+    width: 40px;
+    margin-left: 20px;
+}
+.para22{
+    color: white;
+}
+/*---------------------fin footer----------------------*/
+/*Media pour les tablettes*/
+@media screen and (max-width: 1024px) {
+    /*changement de place du menu du slider pour le mode tablette*/
+    .menu {
+        top: 90%;
+    }
+    /*On fait disparaitre la barre de navigation ainsi que la barre de recherche*/
+    nav, #recherche{
+        display:none;
+    }
+    /*on fait appraitre le menu burger(non fonctionnel)*/
+    #burger{
+        display: block;
+    }
+    /*changement de la taille du h1 pour l'adapter à l'affichage tablette*/
+    h1{
+        font-size: 60px;
+    }
+    /*changement de la taille du header pour garder de bonne proportion pour le mode tablette*/
+    header{
+        height: 200px;
+    }
+    /*réoganisation du formulaire pour l'adapter au format tablette*/
+    #contenuFrom{
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr
+        1fr;
+        grid-template-areas:
+        "contact"
+        "headerContact"
+        "zText "
+        "boutton";
+    }
+    /*réorganisation du bloc objet et email pour le format tablette*/
+    #headerContact{
+        grid-area: headerContact;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+        width: 100%;
+        padding-top: 2%;
+    }
+    /*modiification de la taille de l'icon du formulaire de contact*/
+    #contact{
+        height: 70px;
+    }
+    /*réoganisation du formulaire de contact pour le mode tablette*/
+    #articles{
+        grid-template-columns: 1fr;
+    }
+    /*centre le texte du footer*/  
+    .para22{
+        color: white;
+        text-align:center;
+        padding:3px;
+    } 
+}
+/*Media pour les Télephone*/
+@media screen and (max-width:550px) {
+    /*modification de l'emplacement de menu du slider pour le mode telephone*/
+    .menu {
+        top: 90%;
+    }
+    /*modification de la taille du header pour la version mobile*/
+    header{
+        height: 100px;
+    }
+    /*modification de la taille de l'image du formulaire de contact*/
+    #contact{
+        height: 40px;
+    }
+    .slide-3 p{
+        font-size: 15px;
+    }
+    .slide-3 h2{
+        padding: 2% 0 0 0;
+        font-size: 17px;
+    }
+    .para22{
+        color: white;
+        text-align:center;
+        padding:3px;
+    } 
 }
